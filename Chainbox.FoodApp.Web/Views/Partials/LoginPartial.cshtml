@@ -1,0 +1,35 @@
+﻿@using Chainbox.FoodApp.Controllers
+@model Umbraco.Web.Models.LoginModel
+
+@using (Html.BeginUmbracoForm<LoginController>("Login"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+
+        <legend>LoginModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Username)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Username)
+            @Html.ValidationMessageFor(model => model.Username)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <input type="hidden" name="RedirectUrl" value="/" />
+
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+    </fieldset>
+}

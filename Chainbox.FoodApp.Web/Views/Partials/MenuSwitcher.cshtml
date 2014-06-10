@@ -1,0 +1,25 @@
+﻿@model Chainbox.FoodApp.ViewModels.MenuSwitchModel
+@{
+    var home = Model.PublishedContent.AncestorOrSelf("Homepage");
+    var menues = home.Children.OfTypes("Menu");
+}
+<!-- Intro -->
+<section id="intro">
+    <div>
+        <div class="row">
+        @foreach (var menu in menues)
+        {
+            <div class="4u">
+            @{ var sectionClass = menu.IsFirst() ? "first" : menu.IsLast() ? "last" : "middle"; }
+                <section class="@sectionClass">
+                    <span class="pennant @(menu.Id != Model.CurrentMenu ? "pennant-alt2" : "")"><span class="fa @menu.GetPropertyValue("iconCode")"></span></span>
+                    <header>
+                        <a href="@menu.Url"><h2>@menu.GetPropertyValue("supplier")</h2></a>
+                    </header>
+                    <p>@menu.GetPropertyValue("description")</p>
+                </section>
+            </div>
+        }
+        </div>
+    </div>
+</section>

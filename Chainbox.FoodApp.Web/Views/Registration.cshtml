@@ -1,0 +1,35 @@
+﻿@using Chainbox.FoodApp.ViewModels
+@inherits UmbracoTemplatePage
+@{
+    Layout = "Layout.cshtml";
+}
+<!-- Portfolio -->
+<section>
+    <div>
+        <div class="row">
+            <div class="12u skel-cell-important">
+
+                <!-- Content -->
+                <article class="box is-post">
+                    <a href="#" class="image image-full"><img src="/images/pic01.jpg" alt="" /></a>
+                    <header>
+                        <h2>Register</h2>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <span class="byline">Hey @User.Identity.Name, you already have an account!</span>
+                        }
+                        else
+                        {
+                            <span class="byline">You need an account before you can login</span>
+                        }                        
+                    </header>
+                    @Html.Raw((Model.Content.GetPropertyValue<string>("BodyText")))
+                    @{
+                        Html.RenderPartial("~/Views/Partials/RegisterPartial.cshtml", new RegisterModel());
+                    }
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>

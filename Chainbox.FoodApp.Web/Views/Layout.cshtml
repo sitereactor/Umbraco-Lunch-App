@@ -1,0 +1,80 @@
+﻿
+@inherits UmbracoTemplatePage
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodApp by Umbraco HQ</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" rel="stylesheet" />
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/jquery.dropotron.min.js"></script>
+    <script src="/scripts/config.js"></script>
+    <script src="/scripts/skel.min.js"></script>
+    <script src="/scripts/skel-panels.min.js"></script>
+    @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="/css/skel-noscript.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-desktop.css" />
+    <!--[if lte IE 8]><script src="/scripts/html5shiv.js"></script><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+</head>
+<body class="homepage">
+    <!-- Header Wrapper -->
+    <div id="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+
+                    <!-- Header -->
+                    <section id="header">
+                        <!-- Logo -->
+                        <h1><a href="#">Lunch App</a></h1>
+                        @Html.CachedPartial("TopNavigationPartial", Model, 5, true) 
+                    </section>
+
+                </div>
+            </div>
+            @RenderSection("welcome", required: false)
+            @RenderSection("foodmenu", required: false)
+        </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div id="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Wrapper -->
+    <div id="footer-wrapper">
+
+        <!-- Footer -->
+        <section id="footer" class="container">
+            <div class="row">
+                <div class="12u">
+
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="links">
+                            <li>&copy; Untitled	</li>
+                            <li>Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a></li>
+                            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

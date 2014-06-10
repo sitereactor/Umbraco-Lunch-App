@@ -1,0 +1,28 @@
+﻿@using Umbraco.Web.Models
+@inherits UmbracoTemplatePage
+@{
+    Layout = "Layout.cshtml";
+}
+<!-- Portfolio -->
+<section>
+    <div>
+        <div class="row">
+            <div class="12u skel-cell-important">
+
+                <!-- Content -->
+                <article class="box is-post">
+                    <a href="#" class="image image-full"><img src="/images/pic01.jpg" alt="" /></a>
+                    <header>
+                        <h2>Login</h2>
+                        <span class="byline">Hungry? Login and order your lunch</span>
+                    </header>
+                    @Html.Raw((Model.Content.GetPropertyValue<string>("BodyText")))
+                    @{
+                        Html.RenderPartial("~/Views/Partials/LoginPartial.cshtml", new LoginModel());
+                    }
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
