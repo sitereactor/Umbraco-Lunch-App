@@ -1,0 +1,26 @@
+﻿@model Chainbox.FoodApp.ViewModels.FoodOrdersModel
+
+@if (Model.MemberIsAdmin)
+{
+    <section>
+        <header>
+            <h3>Todays lunch orders</h3>
+        </header>
+        <p>
+            Below you will find all the lunch orders placed today.
+        </p>
+        <ul>
+            @foreach (var orderGroup in Model.Orders.GroupBy(x => x.MemberId))
+            {
+                <li><strong>@orderGroup.First().MemberName</strong>
+                    <ul>
+                        @foreach (var order in orderGroup)
+                        {
+                        <li>@order.FoodItem</li>
+                        }
+                    </ul>
+                </li>
+            }
+        </ul>
+    </section>
+}

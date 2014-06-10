@@ -293,6 +293,7 @@
     <Content Include="Views\Partials\TopNavigationPartial.cshtml" />
     <Content Include="Views\Partials\RegisterPartial.cshtml" />
     <Content Include="Views\Partials\AdminFoodPartial.cshtml" />
+    <Content Include="Views\Partials\AdminFoodOrderPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
