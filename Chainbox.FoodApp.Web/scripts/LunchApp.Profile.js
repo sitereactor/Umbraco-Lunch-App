@@ -29,15 +29,46 @@ LunchApp.Profile.prototype = {
     initShowCurrentFoodOrder: function() {
         var url = '/umbraco/api/FoodOrder/GetOrderFoodItems';
         $.get(url, function (data) {
+            if (data.length === 0) {
+                $('#ResetOrder').hide();
+                $('#TodaysMenu').next().text('You have not ordered lunch yet!');
+            }
+
             $.each(data, function(index, value) {
                 $('#TodaysOrder').append('<li data-fooditem-id="' + value.FoodItemId + '"><strong>' + value.FoodItem + '</strong></li>');
             });
         });
     },
 
-    initResetOrder: function () { },
+    initResetOrder: function () {
+        $('#ResetOrder').on('click', function (e) {
+            e.preventDefault();
+            var url = '/umbraco/api/FoodOrder/ResetOrderFood';
+            $.post(url).done(function(data) {
+                $("ul#TodaysOrder").empty();
+                $('#ResetOrder').hide();
+                $('#TodaysMenu').next().text('You have not ordered lunch yet!');
+            });
+        });
+    },
 
-    initOrderFavorites: function () { }
+    initOrderFavorites: function() {
+        $('#OrderFavorites').on('click', function (e) {
+            e.preventDefault();
+            var url = '/umbraco/api/FoodOrder/OrderFavorites';
+            var menuId = $('#TodaysMenu').attr('data-menu');
+
+            $.post(url, { CurrentFoodSupplier: menuId })
+		        .done(function (data) {
+		            $.each(data, function (index, value) {
+		                $('#TodaysOrder').append('<li data-fooditem-id="' + value.FoodItemId + '"><strong>' + value.FoodItem + '</strong></li>');
+		            });
+
+		            $('#TodaysMenu').next().text('Below is your current order for today');
+		            $('#ResetOrder').show();
+            });
+        });
+    }
 };
 
 $(function () {

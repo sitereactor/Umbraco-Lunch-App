@@ -6,6 +6,7 @@ LunchApp.Order.prototype = {
 	init: function () {
 	    this.initMenuOrder();
 	    this.initFavoriteFoodInMenu();
+        /* TOOD Update view according to current order + favorites */
 	},
 
 	initMenuOrder: function () {
@@ -18,9 +19,7 @@ LunchApp.Order.prototype = {
 
 		    var url = '/umbraco/api/FoodOrder/OrderFoodItem';
 		    $.post(url, { FoodItem: foodItem, FoodItemId: foodItemId })
-		        .done(function(data) {
-		            console.log(data);
-		        });
+		        .done(function (data) { /*LunchOrderDto is returned*/ });
 		});
 	},
 

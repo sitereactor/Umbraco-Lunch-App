@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Mvc;
@@ -46,6 +48,49 @@ namespace Chainbox.FoodApp.Controllers.Api
             var result = DatabaseContext.Database.Insert(order);
 
             return Request.CreateResponse(HttpStatusCode.OK, order);
+        }
+
+        [HttpPost]
+        [MemberAuthorize(Roles = "Intranet Users")]
+        public HttpResponseMessage ResetOrderFood()
+        {
+            var orderNumber = GetCurrentOrderDate();
+            var currentMemberId = Members.GetCurrentMemberId();
+
+            var result =
+                DatabaseContext.Database.Delete<LunchOrderDto>(
+                    "WHERE OrderDate = @OrderNumber AND MemberId = @CurrentMemberId",
+                    new {OrderNumber = orderNumber, CurrentMemberId = currentMemberId});
+
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpPost]
+        [MemberAuthorize(Roles = "Intranet Users")]
+        public HttpResponseMessage OrderFavorites(FavoritesFoodOrderModel model)
+        {
+            var currentMemberId = Members.GetCurrentMemberId();
+            var orderNumber = GetCurrentOrderDate();
+
+            var relations = Services.RelationService.GetByParentId(currentMemberId);
+            var foodItems = Services.RelationService.GetChildEntitiesFromRelations(relations);
+            var currentFavorites = foodItems.Where(x => x.ParentId == model.CurrentFoodSupplier);
+
+            var ordered = new List<LunchOrderDto>();
+            foreach (var favorite in currentFavorites)
+            {
+                var order = new LunchOrderDto
+                            {
+                                FoodItemId = favorite.Id,
+                                FoodItem = favorite.Name,
+                                OrderDate = orderNumber,
+                                MemberId = currentMemberId
+                            };
+                var result = DatabaseContext.Database.Insert(order);
+                ordered.Add(order);
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, ordered);
         }
 
         private long GetCurrentOrderDate()
