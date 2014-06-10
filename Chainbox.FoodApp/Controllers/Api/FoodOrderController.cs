@@ -29,7 +29,16 @@ namespace Chainbox.FoodApp.Controllers.Api
         [MemberAuthorize(Roles = "Admin")]
         public HttpResponseMessage GetAllOrderFoodItems()
         {
-            return Request.CreateResponse(HttpStatusCode.OK);
+            var orderNumber = GetCurrentOrderDate();
+            var orders = DatabaseContext.Database.Fetch<LunchOrderDto>("WHERE OrderDate = @OrderNumber ORDERBY MemberId",
+                new { OrderNumber = orderNumber });
+            var memberIds = orders.Select(x => x.MemberId).Distinct().ToArray();
+            var members = Services.MemberService.GetAllMembers(memberIds);
+
+            var result =
+                orders.Select(x => new {x.FoodItemId, x.FoodItem, members.First(m => m.Id.Equals(x.MemberId)).Name});
+
+            return Request.CreateResponse(HttpStatusCode.OK, result);
         }
 
         [HttpPost]
