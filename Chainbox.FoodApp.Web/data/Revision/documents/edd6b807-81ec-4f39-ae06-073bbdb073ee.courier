@@ -1,0 +1,62 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>edd6b807-81ec-4f39-ae06-073bbdb073ee</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>5f62ff84-da47-4d78-9780-b6d402d001a7</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: 5f62ff84-da47-4d78-9780-b6d402d001a7</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>edd6b807-81ec-4f39-ae06-073bbdb073ee</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: FoodItem</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: FoodItem</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>edd6b807-81ec-4f39-ae06-073bbdb073ee</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Vitello Tonnato</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>FoodItem</DocumentTypeAlias>
+    <ParentUniqueId>5f62ff84-da47-4d78-9780-b6d402d001a7</ParentUniqueId>
+    <UniqueId>edd6b807-81ec-4f39-ae06-073bbdb073ee</UniqueId>
+    <SortOrder>32</SortOrder>
+    <Level>3</Level>
+    <Template>FoodItem</Template>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2014-06-09T13:10:12</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2014-06-09T13:10:12</UpdateDate>
+    <PublishDate>2014-06-09T13:10:12</PublishDate>
+    <User>morten@umbraco.com</User>
+</Document>

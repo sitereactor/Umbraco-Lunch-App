@@ -1,0 +1,61 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>FoodItem</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: FoodItem</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>FoodItem</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Food Item</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/umbraco/images/thumbnails/folder.png</ExtractToPath>
+            <Hash>cfa7fd276740c511f87c43ecbd9880d1</Hash>
+            <Name>~/umbraco/images/thumbnails/folder.png</Name>
+            <PackageFromPath>~/umbraco/images/thumbnails/folder.png</PackageFromPath>
+            <TemporaryStoragePath>/umbraco/images/thumbnails/folder.png</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>FoodItem</Alias>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates>
+        <string>FoodItem</string>
+    </AllowedTemplates>
+    <DefaultTemplate>FoodItem</DefaultTemplate>
+    <Description />
+    <Icon>icon-pie-chart</Icon>
+    <Properties>
+        <ContentTypeProperty>
+            <Alias>name</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description>Name of the food item</Description>
+            <Mandatory>false</Mandatory>
+            <Name>Name</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Content</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
+    <Tabs>
+        <Tab>
+            <ContentTypeAlias>FoodItem</ContentTypeAlias>
+            <SortOrder>0</SortOrder>
+            <Text>Content</Text>
+        </Tab>
+    </Tabs>
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>

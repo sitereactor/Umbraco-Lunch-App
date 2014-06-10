@@ -1,0 +1,62 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>5f62ff84-da47-4d78-9780-b6d402d001a7</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>55c26c92-6710-4589-a18c-fc759f80e4ce</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: 55c26c92-6710-4589-a18c-fc759f80e4ce</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>5f62ff84-da47-4d78-9780-b6d402d001a7</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Menu</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: Menu</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Menu</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Menu</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>5f62ff84-da47-4d78-9780-b6d402d001a7</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Smørrebrød</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Menu</DocumentTypeAlias>
+    <ParentUniqueId>55c26c92-6710-4589-a18c-fc759f80e4ce</ParentUniqueId>
+    <UniqueId>5f62ff84-da47-4d78-9780-b6d402d001a7</UniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>2</Level>
+    <Template>Menu</Template>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2014-06-02T11:59:37</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2014-06-10T08:54:00</UpdateDate>
+    <PublishDate>2014-06-10T08:54:00</PublishDate>
+    <User>morten@umbraco.com</User>
+</Document>

@@ -1,0 +1,25 @@
+﻿<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>Homepage</CourierFileName>
+    <Dependencies />
+    <ItemId>
+        <Id>Homepage</Id>
+        <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Homepage</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/views/Homepage.cshtml</ExtractToPath>
+            <Hash>3db51d2bca6b252a6dfb768284cbba13</Hash>
+            <Name>~/views/Homepage.cshtml</Name>
+            <PackageFromPath>~/views/Homepage.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/views/Homepage.cshtml</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Homepage</Alias>
+    <MasterPagePath>~/masterpages/Homepage.master</MasterPagePath>
+    <ParentTemplateId>0</ParentTemplateId>
+    <Id>1050</Id>
+</Template>

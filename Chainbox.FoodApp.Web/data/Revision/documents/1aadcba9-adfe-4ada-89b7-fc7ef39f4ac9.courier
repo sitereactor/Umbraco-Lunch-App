@@ -1,0 +1,62 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>1aadcba9-adfe-4ada-89b7-fc7ef39f4ac9</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>1aadcba9-adfe-4ada-89b7-fc7ef39f4ac9</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>32d27e7d-8648-4615-bef8-9b495e985b50</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: 32d27e7d-8648-4615-bef8-9b495e985b50</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: FoodItem</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: FoodItem</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>1aadcba9-adfe-4ada-89b7-fc7ef39f4ac9</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>St. Michel vegatar</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>FoodItem</DocumentTypeAlias>
+    <ParentUniqueId>32d27e7d-8648-4615-bef8-9b495e985b50</ParentUniqueId>
+    <UniqueId>1aadcba9-adfe-4ada-89b7-fc7ef39f4ac9</UniqueId>
+    <SortOrder>20</SortOrder>
+    <Level>3</Level>
+    <Template>FoodItem</Template>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2014-06-09T13:36:57</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2014-06-09T13:36:57</UpdateDate>
+    <PublishDate>2014-06-09T13:36:57</PublishDate>
+    <User>morten@umbraco.com</User>
+</Document>

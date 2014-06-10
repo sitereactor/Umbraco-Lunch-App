@@ -1,0 +1,25 @@
+﻿<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>FoodItem</CourierFileName>
+    <Dependencies />
+    <ItemId>
+        <Id>FoodItem</Id>
+        <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Food Item</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/views/FoodItem.cshtml</ExtractToPath>
+            <Hash>3db51d2bca6b252a6dfb768284cbba13</Hash>
+            <Name>~/views/FoodItem.cshtml</Name>
+            <PackageFromPath>~/views/FoodItem.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/views/FoodItem.cshtml</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>FoodItem</Alias>
+    <MasterPagePath>~/masterpages/FoodItem.master</MasterPagePath>
+    <ParentTemplateId>0</ParentTemplateId>
+    <Id>1054</Id>
+</Template>

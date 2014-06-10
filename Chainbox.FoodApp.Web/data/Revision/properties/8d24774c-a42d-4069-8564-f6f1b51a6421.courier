@@ -1,0 +1,26 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>8d24774c-a42d-4069-8564-f6f1b51a6421_Document_data</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>8d24774c-a42d-4069-8564-f6f1b51a6421</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Node: 8d24774c-a42d-4069-8564-f6f1b51a6421</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>8d24774c-a42d-4069-8564-f6f1b51a6421</Id>
+        <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Document Register Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <ContentUniqueId>8d24774c-a42d-4069-8564-f6f1b51a6421</ContentUniqueId>
+    <Data />
+    <NodeObjectType>c66ba18e-eaf3-4cff-8a22-41b16d66a972</NodeObjectType>
+    <ContentTypeAlias>Registration</ContentTypeAlias>
+    <Published>true</Published>
+</ContentPropertyData>

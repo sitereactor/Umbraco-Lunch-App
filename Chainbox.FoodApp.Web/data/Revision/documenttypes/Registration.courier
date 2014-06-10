@@ -1,0 +1,44 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>Registration</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Registration</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: Registration</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Registration</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Registration</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/umbraco/images/thumbnails/folder.png</ExtractToPath>
+            <Hash>cfa7fd276740c511f87c43ecbd9880d1</Hash>
+            <Name>~/umbraco/images/thumbnails/folder.png</Name>
+            <PackageFromPath>~/umbraco/images/thumbnails/folder.png</PackageFromPath>
+            <TemporaryStoragePath>/umbraco/images/thumbnails/folder.png</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Registration</Alias>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates>
+        <string>Registration</string>
+    </AllowedTemplates>
+    <DefaultTemplate>Registration</DefaultTemplate>
+    <Description />
+    <Icon>icon-keychain</Icon>
+    <Properties />
+    <Tabs />
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>

@@ -1,0 +1,62 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>d580ef75-46e8-4dbc-ad5a-49db9c649a38</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>5f62ff84-da47-4d78-9780-b6d402d001a7</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: 5f62ff84-da47-4d78-9780-b6d402d001a7</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>d580ef75-46e8-4dbc-ad5a-49db9c649a38</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: FoodItem</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: FoodItem</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>d580ef75-46e8-4dbc-ad5a-49db9c649a38</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Æggekage</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>FoodItem</DocumentTypeAlias>
+    <ParentUniqueId>5f62ff84-da47-4d78-9780-b6d402d001a7</ParentUniqueId>
+    <UniqueId>d580ef75-46e8-4dbc-ad5a-49db9c649a38</UniqueId>
+    <SortOrder>38</SortOrder>
+    <Level>3</Level>
+    <Template>FoodItem</Template>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2014-06-09T13:29:31</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2014-06-09T13:29:31</UpdateDate>
+    <PublishDate>2014-06-09T13:29:31</PublishDate>
+    <User>morten@umbraco.com</User>
+</Document>

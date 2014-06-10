@@ -1,0 +1,34 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>1138af98-bb55-4695-b5d2-4e86e0203a0c_Document_data</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>1138af98-bb55-4695-b5d2-4e86e0203a0c</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Node: 1138af98-bb55-4695-b5d2-4e86e0203a0c</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>1138af98-bb55-4695-b5d2-4e86e0203a0c</Id>
+        <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Document Æg m. bacon Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <ContentUniqueId>1138af98-bb55-4695-b5d2-4e86e0203a0c</ContentUniqueId>
+    <Data>
+        <ContentProperty>
+            <Alias>name</Alias>
+            <DataType>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataType>
+            <PropertyEditorAlias>Umbraco.Textbox</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">Æg m. bacon</Value>
+        </ContentProperty>
+    </Data>
+    <NodeObjectType>c66ba18e-eaf3-4cff-8a22-41b16d66a972</NodeObjectType>
+    <ContentTypeAlias>FoodItem</ContentTypeAlias>
+    <Published>true</Published>
+</ContentPropertyData>

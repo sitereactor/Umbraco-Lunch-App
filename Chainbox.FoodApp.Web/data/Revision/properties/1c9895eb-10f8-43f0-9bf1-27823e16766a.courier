@@ -1,0 +1,26 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>1c9895eb-10f8-43f0-9bf1-27823e16766a_Document_data</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>1c9895eb-10f8-43f0-9bf1-27823e16766a</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Node: 1c9895eb-10f8-43f0-9bf1-27823e16766a</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>1c9895eb-10f8-43f0-9bf1-27823e16766a</Id>
+        <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Document Login Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <ContentUniqueId>1c9895eb-10f8-43f0-9bf1-27823e16766a</ContentUniqueId>
+    <Data />
+    <NodeObjectType>c66ba18e-eaf3-4cff-8a22-41b16d66a972</NodeObjectType>
+    <ContentTypeAlias>Login</ContentTypeAlias>
+    <Published>true</Published>
+</ContentPropertyData>

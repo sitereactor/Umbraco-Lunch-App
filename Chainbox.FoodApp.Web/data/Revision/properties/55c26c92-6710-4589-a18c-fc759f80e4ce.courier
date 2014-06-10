@@ -1,0 +1,57 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>55c26c92-6710-4589-a18c-fc759f80e4ce_Document_data</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>55c26c92-6710-4589-a18c-fc759f80e4ce</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Node: 55c26c92-6710-4589-a18c-fc759f80e4ce</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>5f62ff84-da47-4d78-9780-b6d402d001a7</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document from picker</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>55c26c92-6710-4589-a18c-fc759f80e4ce</Id>
+        <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Document Home Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <ContentUniqueId>55c26c92-6710-4589-a18c-fc759f80e4ce</ContentUniqueId>
+    <Data>
+        <ContentProperty>
+            <Alias>wecomeMsgHeader</Alias>
+            <DataType>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataType>
+            <PropertyEditorAlias>Umbraco.Textbox</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">Chainbox Lunch</Value>
+        </ContentProperty>
+        <ContentProperty>
+            <Alias>welcomeMsgTagline</Alias>
+            <DataType>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataType>
+            <PropertyEditorAlias>Umbraco.Textbox</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">What do you want to eat today</Value>
+        </ContentProperty>
+        <ContentProperty>
+            <Alias>todaysMenu</Alias>
+            <DataType>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataType>
+            <PropertyEditorAlias>Umbraco.ContentPickerAlias</PropertyEditorAlias>
+            <DBType>Integer</DBType>
+            <Value xsi:type="xsd:string">5f62ff84-da47-4d78-9780-b6d402d001a7</Value>
+        </ContentProperty>
+    </Data>
+    <NodeObjectType>c66ba18e-eaf3-4cff-8a22-41b16d66a972</NodeObjectType>
+    <ContentTypeAlias>Homepage</ContentTypeAlias>
+    <Published>true</Published>
+</ContentPropertyData>

@@ -1,0 +1,122 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>Homepage</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Homepage</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: Homepage</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Login</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Allowed Document type: Login</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Menu</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Allowed Document type: Menu</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Profile</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Allowed Document type: Profile</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Registration</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Allowed Document type: Registration</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Homepage</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Homepage</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/umbraco/images/thumbnails/folder.png</ExtractToPath>
+            <Hash>cfa7fd276740c511f87c43ecbd9880d1</Hash>
+            <Name>~/umbraco/images/thumbnails/folder.png</Name>
+            <PackageFromPath>~/umbraco/images/thumbnails/folder.png</PackageFromPath>
+            <TemporaryStoragePath>/umbraco/images/thumbnails/folder.png</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Homepage</Alias>
+    <AllowedChildDocumentTypes>
+        <string>Login</string>
+        <string>Menu</string>
+        <string>Profile</string>
+        <string>Registration</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates>
+        <string>Homepage</string>
+    </AllowedTemplates>
+    <DefaultTemplate>Homepage</DefaultTemplate>
+    <Description />
+    <Icon>icon-circus</Icon>
+    <Properties>
+        <ContentTypeProperty>
+            <Alias>todaysMenu</Alias>
+            <DataTypeDefinitionId>a6857c73-d6e9-480c-b6e6-f15f6ad11125</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Todays Menu</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Settings</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>wecomeMsgHeader</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Wecome Message Header</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Settings</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <Alias>welcomeMsgTagline</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Welcome Message Tagline</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Settings</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
+    <Tabs>
+        <Tab>
+            <ContentTypeAlias>Homepage</ContentTypeAlias>
+            <SortOrder>0</SortOrder>
+            <Text>Settings</Text>
+        </Tab>
+    </Tabs>
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>true</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>

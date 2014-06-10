@@ -1,0 +1,34 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>397e2884-171f-470b-a281-68d92b9e0c87_Document_data</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>397e2884-171f-470b-a281-68d92b9e0c87</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Node: 397e2884-171f-470b-a281-68d92b9e0c87</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>397e2884-171f-470b-a281-68d92b9e0c87</Id>
+        <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Document Frikadelle m. surt Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <ContentUniqueId>397e2884-171f-470b-a281-68d92b9e0c87</ContentUniqueId>
+    <Data>
+        <ContentProperty>
+            <Alias>name</Alias>
+            <DataType>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataType>
+            <PropertyEditorAlias>Umbraco.Textbox</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">Frikadelle m. surt</Value>
+        </ContentProperty>
+    </Data>
+    <NodeObjectType>c66ba18e-eaf3-4cff-8a22-41b16d66a972</NodeObjectType>
+    <ContentTypeAlias>FoodItem</ContentTypeAlias>
+    <Published>true</Published>
+</ContentPropertyData>

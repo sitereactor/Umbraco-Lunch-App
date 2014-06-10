@@ -1,0 +1,44 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>Profile</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Profile</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: Profile</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Profile</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Profile</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/umbraco/images/thumbnails/folder.png</ExtractToPath>
+            <Hash>cfa7fd276740c511f87c43ecbd9880d1</Hash>
+            <Name>~/umbraco/images/thumbnails/folder.png</Name>
+            <PackageFromPath>~/umbraco/images/thumbnails/folder.png</PackageFromPath>
+            <TemporaryStoragePath>/umbraco/images/thumbnails/folder.png</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Profile</Alias>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates>
+        <string>Profile</string>
+    </AllowedTemplates>
+    <DefaultTemplate>Profile</DefaultTemplate>
+    <Description />
+    <Icon>icon-client</Icon>
+    <Properties />
+    <Tabs />
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>
