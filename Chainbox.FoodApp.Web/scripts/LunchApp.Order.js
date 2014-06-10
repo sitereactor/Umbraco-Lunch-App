@@ -4,7 +4,8 @@
 
 LunchApp.Order.prototype = {
 	init: function () {
-		this.initMenuOrder();
+	    this.initMenuOrder();
+	    this.initFavoriteFoodInMenu();
 	},
 
 	initMenuOrder: function () {
@@ -16,7 +17,13 @@ LunchApp.Order.prototype = {
 			//TOOD Call an endpoint instead outputting to the console
 			console.log(inner.attr('data-food'));
 		});
-	}
+	},
+
+    initFavoriteFoodInMenu: function() {
+        $('.box a.button').on('click', 'favorite-pointer', function (e) {
+            
+        });
+    }
 };
 
 $(function () {
