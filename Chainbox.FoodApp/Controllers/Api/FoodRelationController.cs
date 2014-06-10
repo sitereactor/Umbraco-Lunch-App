@@ -16,10 +16,10 @@ namespace Chainbox.FoodApp.Controllers.Api
         [MemberAuthorize(Roles = "Intranet Users")]
         public HttpResponseMessage GetFavoriteFoodItems()
         {
-            var currentMember = Members.GetCurrentMember();
-            var relations = Services.RelationService.GetByParentId(currentMember.Id);
+            var currentMemberId = Members.GetCurrentMemberId();
+            var relations = Services.RelationService.GetByParentId(currentMemberId);
             var foodItems = Services.RelationService.GetChildEntitiesFromRelations(relations);
-            var result = foodItems.Select(x => new {x.Id, x.Name});
+            var result = foodItems.Select(x => new {x.Id, x.Name, x.ParentId});
 
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
@@ -28,9 +28,9 @@ namespace Chainbox.FoodApp.Controllers.Api
         [MemberAuthorize(Roles = "Intranet Users")]
         public HttpResponseMessage FavoriteFood(FavoriteFoodModel model)
         {
-            var currentMember = Members.GetCurrentMember();
+            var currentMemberId = Members.GetCurrentMemberId();
             var relationType = Services.RelationService.GetRelationTypeByAlias(FavoriteFoodRelationType);
-            var relation = new Relation(currentMember.Id, model.FoodItemId, relationType);
+            var relation = new Relation(currentMemberId, model.FoodItemId, relationType);
             Services.RelationService.Save(relation);
 
             return Request.CreateResponse(HttpStatusCode.OK);
