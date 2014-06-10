@@ -197,6 +197,9 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Models\FavoriteFoodModel.cs" />
+    <Compile Include="Models\OrderFoodModel.cs" />
+    <Compile Include="Schema\LunchOrderDto.cs" />
+    <Compile Include="Startup\CreateSchemaIfNotExists.cs" />
     <Compile Include="ViewModels\IntroductionModel.cs" />
     <Compile Include="ViewModels\MenuSwitchModel.cs" />
     <Compile Include="ViewModels\RegisterModel.cs" />
