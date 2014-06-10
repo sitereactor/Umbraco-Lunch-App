@@ -1,4 +1,6 @@
 ﻿@inherits UmbracoTemplatePage
+@using Chainbox.FoodApp.Models
+@using Chainbox.FoodApp.ViewModels
 @{
     Layout = "Layout.cshtml";
     var homepage = Model.Content.AncestorOrSelf("Homepage");
@@ -26,8 +28,7 @@
                         {
                             <span class="byline"><a href="/login/">Login</a> or <a href="/register/">Register</a></span>
                         }
-                    </header>
-                    <!-- TODO Form to select favorite food items -->
+                    </header>L
                     <p>
                         Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
                         hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
@@ -102,7 +103,7 @@
                     </footer>
                 </section>
             </div>
-            <!-- TODO Possibly insert add-food-form for admins here -->
+            @Html.Action("Index", "FoodItems")
         </div>
     </div>
 </section>

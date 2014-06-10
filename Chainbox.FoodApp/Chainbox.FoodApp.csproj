@@ -194,10 +194,12 @@
   <ItemGroup>
     <Compile Include="Controllers\Api\FoodOrderController.cs" />
     <Compile Include="Controllers\Api\FoodRelationController.cs" />
+    <Compile Include="Controllers\FoodItemsController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Models\FavoriteFoodModel.cs" />
     <Compile Include="Models\FavoritesFoodOrderModel.cs" />
+    <Compile Include="ViewModels\FoodItemModel.cs" />    
     <Compile Include="Models\OrderFoodModel.cs" />
     <Compile Include="Schema\LunchOrderDto.cs" />
     <Compile Include="Startup\CreateSchemaIfNotExists.cs" />
