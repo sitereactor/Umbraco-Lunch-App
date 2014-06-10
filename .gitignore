@@ -1,0 +1,49 @@
+syntax: glob
+.git
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+[Db]ebug*/
+obj/
+[Rr]elease*/
+_BuildOutput/*
+
+_ReSharper*/
+*.ncrunchsolution
+*.ncrunchsolution.user
+*.ncrunchproject
+*.crunchsolution.cache
+
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.suo
+[sS]ource
+[sS]andbox
+*.vs10x
+*.orig
+*.[Dd]ot[Ss]ettings
+*.js.map
+deploy.cmd
+
+
+#Nuget Packages
+packages/*
+!packages/repositories.config
+
+#Umbraco folders
+/**/umbraco/*
+/**/umbraco_client/*
+
+#Exclude folders
+Presentation
+html5up-dopetrope
+/**/data/backoffice/users/*
+
+App_Data/*
+!App_Data/access.config
+!App_Data/packages
+log.txt
