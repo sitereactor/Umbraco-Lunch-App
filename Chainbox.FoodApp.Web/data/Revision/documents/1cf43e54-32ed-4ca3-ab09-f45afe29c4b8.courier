@@ -1,0 +1,62 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CourierFileName>1cf43e54-32ed-4ca3-ab09-f45afe29c4b8</CourierFileName>
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>1cf43e54-32ed-4ca3-ab09-f45afe29c4b8</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>fa22a1c2-f50e-41dd-a7d5-1f5460aa52dc</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: fa22a1c2-f50e-41dd-a7d5-1f5460aa52dc</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: FoodItem</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>FoodItem</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: FoodItem</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>1cf43e54-32ed-4ca3-ab09-f45afe29c4b8</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>51</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>FoodItem</DocumentTypeAlias>
+    <ParentUniqueId>fa22a1c2-f50e-41dd-a7d5-1f5460aa52dc</ParentUniqueId>
+    <UniqueId>1cf43e54-32ed-4ca3-ab09-f45afe29c4b8</UniqueId>
+    <SortOrder>1</SortOrder>
+    <Level>3</Level>
+    <Template>FoodItem</Template>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2014-06-10T15:44:56</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2014-06-10T15:44:56</UpdateDate>
+    <PublishDate>2014-06-10T15:44:56</PublishDate>
+    <User>admin</User>
+</Document>
