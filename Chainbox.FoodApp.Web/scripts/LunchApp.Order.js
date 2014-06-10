@@ -13,9 +13,14 @@ LunchApp.Order.prototype = {
 			e.preventDefault();
 			var inner = $(this);
 			inner.addClass('alt');
+			var foodItem = inner.attr('data-food');
+			var foodItemId = inner.attr('data-food-item');
 
-			//TOOD Call an endpoint instead outputting to the console
-			console.log(inner.attr('data-food'));
+		    var url = '/umbraco/api/FoodOrder/OrderFoodItem';
+		    $.post(url, { FoodItem: foodItem, FoodItemId: foodItemId })
+		        .done(function(data) {
+		            console.log(data);
+		        });
 		});
 	},
 

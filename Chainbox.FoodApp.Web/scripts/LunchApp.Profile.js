@@ -4,19 +4,40 @@
 
 LunchApp.Profile.prototype = {
     init: function () {
-        this.initFavoriteFoodItems();
+        this.initShowFavoriteFoodItems();
+        this.initShowCurrentFoodOrder();
+        this.initResetOrder();
+        this.initOrderFavorites();
     },
 
-    initFavoriteFoodItems: function () {
+    initShowFavoriteFoodItems: function () {
         var url = '/umbraco/api/FoodRelation/GetFavoriteFoodItems';
         var menuId = $('#TodaysMenu').attr('data-menu');
         
         $.get(url, function (data) {
             $.each(data, function (index, value) {
-                $(".divided").append('<li data-fooditem-id="' + value.Id + '"><strong>' + value.Name + '</strong></li>');
+                if (menuId == value.ParentId) {
+                    $(".divided").append('<li data-fooditem-id="' + value.Id + '" data-supplier-id="' + value.ParentId + '"><strong>' + value.Name + '</strong></li>');
+                } else {
+                    $(".divided").append('<li data-fooditem-id="' + value.Id + '" data-supplier-id="' + value.ParentId + '">' + value.Name + '</li>');
+                }
+                
             });
         });
-    }
+    },
+
+    initShowCurrentFoodOrder: function() {
+        var url = '/umbraco/api/FoodOrder/GetOrderFoodItems';
+        $.get(url, function (data) {
+            $.each(data, function(index, value) {
+                $('#TodaysOrder').append('<li data-fooditem-id="' + value.FoodItemId + '"><strong>' + value.FoodItem + '</strong></li>');
+            });
+        });
+    },
+
+    initResetOrder: function () { },
+
+    initOrderFavorites: function () { }
 };
 
 $(function () {

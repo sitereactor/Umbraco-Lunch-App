@@ -82,23 +82,23 @@
                         <h3>Current lunch order</h3>
                     </header>
                     <span id="TodaysMenu" data-menu="@menu.Id"><strong>Today: @menu.GetPropertyValue("supplier")</strong></span>
-                    <!-- TODO Show todays lunch order -->
-                    <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                    <p>Below is your current order for today</p>
+                    <ul id="TodaysOrder">
+                    </ul>
                     <footer>
-                        <a href="#" class="button alt">Magna sed taciti</a>
+                        <a id="ResetOrder" href="#" class="button alt">Reset Order</a>
                     </footer>
                 </section>
                 <section class="box">
                     <header>
                         <h3>Favorite food items</h3>
                     </header>
-                    <!-- TODO List favorite food items from Relations -->
                     <!-- TODO Ability to order lunch from favorites - only from current menu though -->
                     <p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
                     <ul class="divided">
                     </ul>
                     <footer>
-                        <a href="#" class="button alt">Ipsum consequat</a>
+                        <a id="OrderFavorites" href="#" class="button alt">Order Favorites</a>
                     </footer>
                 </section>
             </div>
