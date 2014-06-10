@@ -1153,4 +1153,10 @@
 /*********************************************************************************/
 .favorite-pointer {
     cursor: pointer;
+    color: #827a7c;
+}
+
+.favorite-pointer-alt {
+    cursor: default;
+    color: #FFD800;
 }

@@ -20,8 +20,15 @@ LunchApp.Order.prototype = {
 	},
 
     initFavoriteFoodInMenu: function() {
-        $('.box a.button').on('click', 'favorite-pointer', function (e) {
+        $('.box span.favorite-pointer').on('click', function (e) {
+            e.preventDefault();
+            var inner = $(this);
+            inner.removeClass('favorite-pointer');
+            inner.addClass('favorite-pointer-alt');
+            var foodItemId = inner.attr('data-food-item');
             
+            var url = '/umbraco/api/FoodRelation/FavoriteFood';
+            $.post(url, { FoodItemId: foodItemId });
         });
     }
 };

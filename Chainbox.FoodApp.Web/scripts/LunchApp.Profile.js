@@ -10,9 +10,11 @@ LunchApp.Profile.prototype = {
     initFavoriteFoodItems: function () {
         var url = '/umbraco/api/FoodRelation/GetFavoriteFoodItems';
         var menuId = $('#TodaysMenu').attr('data-menu');
-        console.log(menuId);
+        
         $.get(url, function (data) {
-            $(".divided").html(data);
+            $.each(data, function (index, value) {
+                $(".divided").append('<li data-fooditem-id="' + value.Id + '"><strong>' + value.Name + '</strong></li>');
+            });
         });
     }
 };
