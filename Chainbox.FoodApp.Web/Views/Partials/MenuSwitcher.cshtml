@@ -1,13 +1,13 @@
 ﻿@model Chainbox.FoodApp.ViewModels.MenuSwitchModel
 @{
     var home = Model.PublishedContent.AncestorOrSelf("Homepage");
-    var menues = home.Children.OfTypes("Menu");
+    var menus = home.Children.OfTypes("Menu");
 }
 <!-- Intro -->
 <section id="intro">
     <div>
         <div class="row">
-        @foreach (var menu in menues)
+        @foreach (var menu in menus)
         {
             <div class="4u">
             @{ var sectionClass = menu.IsFirst() ? "first" : menu.IsLast() ? "last" : "middle"; }
