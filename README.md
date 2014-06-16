@@ -5,9 +5,9 @@ Implementation of an Umbraco site that acts as a Lunch Order App. Created for th
 
 After clonning the repository simply build the solution using Visual Studio 2012 or 2013. You can run the site directly from Visual Studio by hitting F5 or by setting up the site in IIS or Web Matrix. Once the site is started a Sql Ce database will be created along with the Umbraco database schema. All the data used on the site, including Document Types, Templates and Content, will be "recreated" on application startup.
 
-For entering the Umbraco backoffice use the following test user: 
-Login: test@domain.com 
-Password: 123456 
+For entering the Umbraco backoffice use the following test user:
+- Login: test@domain.com 
+- Password: 123456 
 
 
 The application and solution itself is MIT licensed.
